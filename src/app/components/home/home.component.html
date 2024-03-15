@@ -1,0 +1,68 @@
+<div class="lg:flex p-10 bg-white">
+    <!-- Left Div -->
+    <div class="lg:w-1/2 bg-transparent flex items-center justify-center">
+        <div class="text-center lg:text-left text-current">
+            <div>
+                <h1
+                    class="font-title text-[clamp(3rem,6vw,4.2rem)] font-black leading-[1.1] [word-break:auto-phrase] xl:w-[115%] xl:text-start [:root[dir=rtl]_&amp;]:leading-[1.35]">
+                    <span
+                        class="[&amp;::selection]:text-base-content brightness-150 contrast-150 [&amp;::selection]:bg-blue-700/20 text-black">Book,Track</span>
+                    <br>
+                    <span class="inline-grid">
+                        <!-- <span class="m-1 pointer-events-none col-start-1 row-start-1 bg-[linear-gradient(90deg,theme(colors.error)_0%,theme(colors.secondary)_9%,theme(colors.secondary)_42%,theme(colors.primary)_47%,theme(colors.accent)_100%)] bg-clip-text blur-xl [transform:translate3d(0,0,0)] [-webkit-text-fill-color:transparent] before:content-[attr(data-text)] [@supports(color:oklch(0_0_0))]:bg-[linear-gradient(90deg,oklch(var(--s))_4%,color-mix(in_oklch,oklch(var(--s)),oklch(var(--er)))_22%,oklch(var(--p))_45%,color-mix(in_oklch,oklch(var(--p)),oklch(var(--a)))_67%,oklch(var(--a))_100.2%)]"
+                            aria-hidden="true" data-text="component library"></span> -->
+                        <span
+                            class="[&amp;::selection]:text-base-content relative col-start-1 row-start-1 bg-[linear-gradient(90deg,theme(colors.error)_0%,theme(colors.secondary)_9%,theme(colors.secondary)_42%,theme(colors.primary)_47%,theme(colors.accent)_100%)] bg-clip-text [-webkit-text-fill-color:transparent] [&amp;::selection]:bg-blue-700/20 [@supports(color:oklch(0_0_0))]:bg-[linear-gradient(90deg,oklch(var(--s))_4%,color-mix(in_oklch,oklch(var(--s)),oklch(var(--er)))_22%,oklch(var(--p))_45%,color-mix(in_oklch,oklch(var(--p)),oklch(var(--a)))_67%,oklch(var(--a))_100.2%)]">Your Shipment</span>
+                    </span>
+                    <br>
+                    <span
+                        class="[&amp;::selection]:text-base-content brightness-150 contrast-150 [&amp;::selection]:bg-blue-700/20 text-black">
+                        with ease.</span>
+
+                </h1>
+            </div>
+            <div class="pt-4">
+                <button *ngIf="!logged_in" class="btn btn-outline btn-info m-2" (click)="login_google()"> <i class="bi bi-google"></i> Login with Google</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Div -->
+    <div class="lg:w-1/2 bg-transparent flex items-center justify-center pb-11">
+        <!-- Content for the right div -->
+        <p class="text-center lg:text-right text-current">
+            <img src="../../../assets/burn.gif.gif" style="max-height: 600px;" class="p-4">
+        </p>
+    </div>
+</div>
+
+<div class="bg-blue-600 py-20">
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-semibold text-white mb-4">Deliver Anything, Anywhere</h1>
+        <p class="text-lg text-gray-200 mb-8">With our delivery app, you can send packages, groceries, food, and more with ease.</p>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="container mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-8">Why Choose Us?</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Fast Delivery</h3>
+            <p class="text-gray-600">We provide fast and reliable delivery services to ensure your packages reach their destination on time.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Easy to Use</h3>
+            <p class="text-gray-600">Our app is user-friendly, making it easy for you to book deliveries and track your packages.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Secure Transactions</h3>
+            <p class="text-gray-600">We prioritize the security of your transactions, ensuring your personal and payment information is safe.</p>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
